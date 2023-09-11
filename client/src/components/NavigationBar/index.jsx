@@ -1,11 +1,10 @@
 // Funcionalidad
-import { BsDatabaseAdd, BsFillBookFill, BsCaretDownFill } from "react-icons/bs";
-import { TbPokeball } from "react-icons/tb";
+
 // Estilos
 import "./module.css";
 // Componentes
-import SearchBar from "../SearchBar";
-import TypeListConstructor from "./typeListConstructor";
+// import SearchBar from "../SearchBar";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
@@ -13,45 +12,31 @@ const NavigationBar = () => {
       <ul>
         <li>
           <a className="active" href="#home">
-            <TbPokeball /> Home{" "}
+            <Link to="/home">Home</Link>
           </a>
         </li>
         <li>
           <a href="#create">
-            <BsDatabaseAdd /> Create{" "}
+            <Link to="/create">Create</Link>
           </a>
         </li>
         <li>
-          <a href="#about">
-            <BsFillBookFill /> About{" "}
-          </a>
+          <a href="#about">About </a>
         </li>
-        <li className="searchBar">
-          <SearchBar />
-        </li>
+        <li className="searchBar"></li>
         <li>
           <li className="dropdown">
-            <a className="dropbtn">
-              TYPE 1 <BsCaretDownFill />
-            </a>
-            <li className="dropdownTypes">
-              <TypeListConstructor />
-            </li>
+            <a className="dropbtn">TYPE 1</a>
+            <li className="dropdownTypes"></li>
           </li>
           <li class="dropdown">
-            <a class="dropbtn">
-              TYPE 2 <BsCaretDownFill />
-            </a>
-            <li class="dropdownTypes">
-              <TypeListConstructor />
-            </li>
+            <a class="dropbtn">TYPE 2</a>
+            <li class="dropdownTypes"></li>
           </li>
         </li>
 
         <li class="dropdown">
-          <a class="dropbtn">
-            STATS <BsCaretDownFill />
-          </a>
+          <a class="dropbtn">STATS</a>
           <li class="dropdown-content">
             <a href="#">A-Z</a>
             <a href="#">ATK</a>
@@ -61,18 +46,14 @@ const NavigationBar = () => {
           </li>
         </li>
         <li class="dropdown">
-          <a class="dropbtn">
-            ORDER <BsCaretDownFill />
-          </a>
+          <a class="dropbtn">ORDER</a>
           <li class="dropdown-content">
             <a href="#">ASCENDANT</a>
             <a href="#">DESCENDANT</a>
           </li>
         </li>
         <li class="dropdown">
-          <a class="dropbtn">
-            ORIGIN <BsCaretDownFill />
-          </a>
+          <a class="dropbtn">ORIGIN</a>
           <li class="dropdown-content">
             <a href="#">ALL</a>
             <a href="#">API</a>

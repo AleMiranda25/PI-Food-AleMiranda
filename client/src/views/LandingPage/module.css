@@ -10,9 +10,9 @@
   height: 100vh;
 }
 .titulo {
+  display: flex;
   max-height: 20%;
   max-width: 50%;
-  /* margin: auto; */
   margin-top: 40px;
 }
 .parrafo {
@@ -29,7 +29,6 @@
   color: black;
   background-color: rgba(255, 255, 255, 0.231);
   padding: 10px 50px 50px 50px;
-  /* padding-left: 190px; */
   margin: auto;
   width: 50%;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);

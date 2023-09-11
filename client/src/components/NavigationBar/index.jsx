@@ -3,7 +3,7 @@
 // Estilos
 import "./module.css";
 // Componentes
-// import SearchBar from "../SearchBar";
+import SearchBar from "../SearchBar";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
@@ -55,14 +55,3 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
-
-// const NavigationBar = () => {
-//   return (
-//     <div>
-//       <Link to="/home">Home</Link>
-//       <Link to="/create">Create</Link>
-//     </div>
-//   );
-// };
-
-// export default NavigationBar;

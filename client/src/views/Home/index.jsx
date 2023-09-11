@@ -1,10 +1,13 @@
 //Estilos
 import "./module.css";
+//Componentes
+import RecipeCardContainer from "../../components/RecipeCardContainer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="recipeContainer">
       <h1>Esta es la vista de HOME</h1>
+      <RecipeCardContainer />
     </div>
   );
 };

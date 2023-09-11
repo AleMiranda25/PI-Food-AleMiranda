@@ -20,6 +20,7 @@
   -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
 }
 
 .cardContainer:hover {
@@ -70,7 +71,7 @@
   justify-content: space-evenly;
 }
 
-.typesWrapper {
+.dietsWrapper {
   display: flex;
   justify-content: center;
 }

@@ -5,9 +5,12 @@ import RecipeCardContainer from "../../components/RecipeCardContainer";
 
 const Home = () => {
   return (
-    <div className="recipeContainer">
-      <h1>Esta es la vista de HOME</h1>
-      <RecipeCardContainer />
+    <div>
+      <div className="tituloHome"></div>
+
+      <div className="recipeContainer">
+        <RecipeCardContainer />
+      </div>
     </div>
   );
 };

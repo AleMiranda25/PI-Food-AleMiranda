@@ -10,16 +10,24 @@ const RecipeCardContainer = () => {
     {
       id: "1b5ae1e6-299b-48bb-9831-159a57d40efe",
       name: "My Recipe soup",
-      image: "https//:imageDirection",
+      image:
+        "https://media.istockphoto.com/id/1349383878/es/foto/pizza-hawaiana-con-jam%C3%B3n-y-pi%C3%B1a.jpg?s=1024x1024&w=is&k=20&c=6QMaT_zY84XmSR0P6_lteE5eguFs1Y9ibaPY4T4ApSk=",
       summary: "This is the resume of My Recipe",
       healthScore: 100,
       steps: "Here we got a series of steps to make My Recipe",
-      diets: ["gluten free", "lacto ovo vegetarian", "paleolithic", "whole 30"],
+      diets: [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "paleolithic",
+        "whole 30",
+        "vegan",
+      ],
     },
     {
       id: "1b5ae1e6-299b-48bb-9831-159a57d40efe",
       name: "My Recipe soup",
-      image: "https//:imageDirection",
+      image:
+        "https://media.istockphoto.com/id/1349383878/es/foto/pizza-hawaiana-con-jam%C3%B3n-y-pi%C3%B1a.jpg?s=1024x1024&w=is&k=20&c=6QMaT_zY84XmSR0P6_lteE5eguFs1Y9ibaPY4T4ApSk=",
       summary: "This is the resume of My Recipe",
       healthScore: 100,
       steps: "Here we got a series of steps to make My Recipe",

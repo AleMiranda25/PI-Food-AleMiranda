@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: var(--color-azul-oscuro);
+  color: var(--color-gris-claro);
+  text-shadow: 1px 1px black;
   background-image: url("../../assets/Backgrounds/PaltaImage.png");
 }

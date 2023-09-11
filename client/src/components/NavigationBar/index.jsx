@@ -19,7 +19,9 @@ const NavigationBar = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
-        <li className="searchBar"></li>
+        <li className="searchBar">
+          <SearchBar />
+        </li>
         <li>
           <li className="dropdown">
             <a className="dropbtn">Diets</a>

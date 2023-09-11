@@ -16,7 +16,6 @@ const RecipeCard = ({ name, image, diets }) => {
           const style = {
             margin: "5px",
             padding: "5px",
-            borderRadius: "15px",
           };
           return (
             <h2 key={index} style={style}>

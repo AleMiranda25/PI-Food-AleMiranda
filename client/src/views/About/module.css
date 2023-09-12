@@ -9,8 +9,8 @@
   --color-azul-oscuro: #263238;
 }
 
-.container {
-  background-color: rgba(0, 0, 0, 0.2);
+.infoContain {
+  background-image: url("../../assets/Backgrounds/PaltaImage.png");
   display: flex;
   position: fixed;
   width: 100%;
@@ -20,5 +20,22 @@
   height: 100vh;
   color: var(--color-gris-claro);
   text-shadow: 1px 1px black;
-  background-image: url("../../assets/Backgrounds/PaltaImage.png");
+}
+
+.otherInfo {
+  color: var(--color-blanco);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.socialMedia {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 15px;
+}
+.socialMedia img {
+  height: 50px;
+  cursor: pointer;
 }

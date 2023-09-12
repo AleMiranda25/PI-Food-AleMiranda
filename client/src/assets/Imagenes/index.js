@@ -6,6 +6,7 @@ import ImagePostgre from "../Imagenes/posgresql.png";
 import ImageReact from "../Imagenes/react.png";
 import ImageRedux from "../Imagenes/redux.png";
 import ImageSeq from "../Imagenes/sequelize.png";
+import LinkedIn from "../Imagenes/LinkedIn.png";
 
 export {
   ImageHTML,
@@ -16,4 +17,5 @@ export {
   ImageReact,
   ImageRedux,
   ImageSeq,
+  LinkedIn,
 };

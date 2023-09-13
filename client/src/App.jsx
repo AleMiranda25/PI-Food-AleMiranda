@@ -15,24 +15,22 @@ import NavigationBar from "./components/NavigationBar";
 export default function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" Component={LandingPage} />
-          <Route
-            element={
-              <div>
-                <NavigationBar />
-                <Outlet />
-              </div>
-            }
-          >
-            <Route exact path="/home" Component={Home} />
-            <Route path="/about" Component={About} />
-            <Route path="/detail" Component={Detail} />
-            <Route path="/create" Component={Form} />
-          </Route>
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path="/" Component={LandingPage} />
+        <Route
+          element={
+            <div>
+              <NavigationBar />
+              <Outlet />
+            </div>
+          }
+        >
+          <Route exact path="/home" Component={Home} />
+          <Route path="/about" Component={About} />
+          <Route path="/detail" Component={Detail} />
+          <Route path="/create" Component={Form} />
+        </Route>
+      </Routes>
     </div>
   );
 }

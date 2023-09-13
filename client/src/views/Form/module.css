@@ -1,0 +1,11 @@
+.formWrapper {
+  background-image: url("../../assets/Backgrounds/limeBackground.jpg");
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow: 1px 1px black;
+}

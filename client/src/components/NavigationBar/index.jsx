@@ -51,6 +51,9 @@ const NavigationBar = () => {
             <a href="#">DB</a>
           </li>
         </li>
+        <li>
+          <Link to="/">Landing</Link>
+        </li>
       </ul>
     </div>
   );

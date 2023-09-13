@@ -1,0 +1,6 @@
+// * ACTIONS TYPES
+
+const GET_RECIPES = "GET_RECIPES";
+const GET_RECIPE = "GET_RECIPE";
+
+export { GET_RECIPES, GET_RECIPE };

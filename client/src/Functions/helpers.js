@@ -1,3 +1,18 @@
+const cleanData = (arr) =>
+  arr.map((ele) => {
+    return {
+      id: ele.id,
+      name: ele.title,
+      image: ele.image,
+      summary: ele.summary,
+      healthScore: ele.healthScore,
+      steps: ele.analyzedInstructions[0]?.steps
+        .map((ele) => `${ele.number} ${ele.step}`)
+        .join(""),
+      diets: ele.diets?.map((element) => element),
+    };
+  });
+
 const validations = (name, data) => {
   const numeros = new RegExp(/^([0-9])*$/);
   const url = new RegExp(
@@ -18,4 +33,5 @@ const validations = (name, data) => {
   }
   return errors;
 };
-export default validations;
+
+export { cleanData, validations };

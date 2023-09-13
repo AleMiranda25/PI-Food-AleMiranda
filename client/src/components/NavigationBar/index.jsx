@@ -29,23 +29,23 @@ const NavigationBar = () => {
           </li>
         </li>
 
-        <li class="dropdown">
-          <a class="dropbtn">Filter</a>
-          <li class="dropdown-content">
+        <li className="dropdown">
+          <a className="dropbtn">Filter</a>
+          <li className="dropdown-content">
             <a href="#">A-Z</a>
             <a href="#">Health Score</a>
           </li>
         </li>
-        <li class="dropdown">
-          <a class="dropbtn">Order</a>
-          <li class="dropdown-content">
+        <li className="dropdown">
+          <a className="dropbtn">Order</a>
+          <li className="dropdown-content">
             <a href="#">Ascendant</a>
             <a href="#">Descendant</a>
           </li>
         </li>
-        <li class="dropdown">
-          <a class="dropbtn">Origin</a>
-          <li class="dropdown-content">
+        <li className="dropdown">
+          <a className="dropbtn">Origin</a>
+          <li className="dropdown-content">
             <a href="#">ALL</a>
             <a href="#">API</a>
             <a href="#">DB</a>

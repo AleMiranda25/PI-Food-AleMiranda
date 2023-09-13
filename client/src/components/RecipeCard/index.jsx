@@ -8,7 +8,7 @@ const RecipeCard = ({ name, image, diets }) => {
   return (
     <div className="cardContainer">
       <div className="nameContainer">
-        <h2>{name.toUpperCase()}</h2>
+        <h4>{name}</h4>
       </div>
       <img src={image} alt="Recipe Image" />
       <div className="dietsWrapper">
@@ -19,7 +19,7 @@ const RecipeCard = ({ name, image, diets }) => {
           };
           return (
             <h2 key={index} style={style}>
-              {diet.toUpperCase()}
+              {diet}
             </h2>
           );
         })}

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import "./module.css";
 //Componentes
 import RecipeCard from "../RecipeCard";
+import { cleanData } from "../../Functions/helpers";
 
 const RecipeCardContainer = () => {
   // const test = [
@@ -125,7 +126,9 @@ const RecipeCardContainer = () => {
   //   },
   // ];
 
-  const recipes = useSelector((state) => state.recipes);
+  const recipesRaw = useSelector((state) => state.recipes);
+
+  const recipes = cleanData(recipesRaw);
 
   return (
     <div className="mainCard">

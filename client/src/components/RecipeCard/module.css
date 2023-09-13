@@ -15,6 +15,7 @@
 
 .cardContainer {
   width: 250px;
+  height: 350px;
   display: flex;
   text-shadow: 2px 2px #303030;
   flex-direction: column;
@@ -78,6 +79,8 @@
 }
 
 .dietsWrapper {
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: xx-small;
   display: flex;
   flex-wrap: wrap;

@@ -8,6 +8,7 @@ import {
   ImageReact,
   ImageRedux,
   ImageSeq,
+  LinkedIn,
 } from "../../assets/Imagenes/index.js";
 // Estilos
 import "./module.css";
@@ -15,11 +16,14 @@ import "./module.css";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="infoContain">
       <h1>Proyecto Individual - Tema Foods</h1>
-      <h1> Henry Bootcamp </h1>
-      <h2>Desarrollador: Jorge Alejandro Miranda</h2>
-      <h2>Tecnologias Implementadas</h2>
+      <div className="otherInfo">
+        <h1> Henry Bootcamp </h1>
+        <h2>Desarrollador: Jorge Alejandro Miranda</h2>
+        <h2>Tecnologias Implementadas</h2>
+      </div>
+
       <div className="tecnologies">
         <img src={ImageHTML} alt="html logo" />
         <img src={ImageCSS} alt="css logo" />
@@ -30,6 +34,15 @@ const About = () => {
         <img src={ImagePostgre} alt="posgresql logo" />
         <img src={ImageReact} alt="react logo" />
         <img src={ImageSeq} alt="sequelize logo" />
+      </div>
+
+      <div className="socialMedia">
+        <a
+          href="https://www.linkedin.com/in/ale-miranda-15423a263/"
+          target="_blank"
+        >
+          <img src={LinkedIn} alt="linkedin logo" />
+        </a>
       </div>
     </div>
   );

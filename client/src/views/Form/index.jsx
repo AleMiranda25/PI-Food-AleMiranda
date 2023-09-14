@@ -7,7 +7,9 @@ import "./module.css";
 const Form = () => {
   return (
     <div className="formWrapper">
-      <h1>Esta es la vista de FORM</h1>
+      <div className="formSheet">
+        <h1>Esta es la vista de FORM</h1>
+      </div>
     </div>
   );
 };

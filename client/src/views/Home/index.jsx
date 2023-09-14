@@ -1,8 +1,10 @@
-//Estilos
-import "./module.css";
+// Funcionalidad
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getRecipes } from "../../redux/actions";
+import { getDiets, getRecipes } from "../../redux/actions";
+
+//Estilos
+import "./module.css";
 //Componentes
 import RecipeCardContainer from "../../components/RecipeCardContainer";
 
@@ -11,6 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getRecipes());
+    dispatch(getDiets());
   }, [dispatch]);
 
   return (

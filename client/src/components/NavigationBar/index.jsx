@@ -4,7 +4,8 @@
 import "./module.css";
 // Componentes
 import SearchBar from "../SearchBar";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import NavItems from "../NavItems";
 
 const NavigationBar = () => {
   return (
@@ -22,36 +23,11 @@ const NavigationBar = () => {
         <li className="searchBar">
           <SearchBar />
         </li>
-        <li>
-          <li className="dropdown">
-            <a className="dropbtn">Diets</a>
-            <li className="dropdownTypes"></li>
-          </li>
-        </li>
+        <Routes>
+          <Route exact path="/home" Component={NavItems} />
+        </Routes>
 
-        <li className="dropdown">
-          <a className="dropbtn">Filter</a>
-          <li className="dropdown-content">
-            <a href="#">A-Z</a>
-            <a href="#">Health Score</a>
-          </li>
-        </li>
-        <li className="dropdown">
-          <a className="dropbtn">Order</a>
-          <li className="dropdown-content">
-            <a href="#">Ascendant</a>
-            <a href="#">Descendant</a>
-          </li>
-        </li>
-        <li className="dropdown">
-          <a className="dropbtn">Origin</a>
-          <li className="dropdown-content">
-            <a href="#">ALL</a>
-            <a href="#">API</a>
-            <a href="#">DB</a>
-          </li>
-        </li>
-        <li>
+        <li className="landingButton">
           <Link to="/">Landing</Link>
         </li>
       </ul>

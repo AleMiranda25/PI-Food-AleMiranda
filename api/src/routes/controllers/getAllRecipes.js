@@ -1,8 +1,8 @@
 const axios = require("axios");
 const { Recipe, Diets } = require("../../db");
 const { API_KEY } = process.env;
-const URL_API = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`;
-// const URL_ALTER = `https://run.mocky.io/v3/5453d6ca-8d60-46e4-9481-3dd8a34d60e0`;
+// const URL_API = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`;
+const URL_ALTER = `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`;
 
 const cleanData = (arr) =>
   arr.map((ele) => {
@@ -22,7 +22,7 @@ const cleanData = (arr) =>
 // Traigo toda la info de la api
 const getFromApi = async () => {
   try {
-    const apiDataRaw = (await axios.get(URL_API)).data.results;
+    const apiDataRaw = (await axios.get(URL_ALTER)).data.results;
     return cleanData(apiDataRaw);
   } catch (error) {
     return json({ error: error.message });

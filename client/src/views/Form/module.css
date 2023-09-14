@@ -1,5 +1,6 @@
 .formWrapper {
-  background-image: url("../../assets/Backgrounds/limeBackground.jpg");
+  background-image: url("../../assets/Backgrounds/backgroundForm.jpg");
+  background-size: cover;
   display: flex;
   position: fixed;
   width: 100%;
@@ -8,4 +9,9 @@
   align-items: center;
   height: 100vh;
   text-shadow: 1px 1px black;
+}
+
+.formSheet {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
 }

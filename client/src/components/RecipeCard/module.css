@@ -10,7 +10,8 @@
   --color-11: #ffffff;
   --color-10: #9e9e9e;
   --color-9: #ff5722;
-  --color-7: #263238;
+  --color-7: #2632387a;
+  --color-12: #263238;
 }
 
 .cardContainer {
@@ -22,7 +23,7 @@
   border-radius: 10px;
   padding: 0px 10px 10px 10px;
   margin: 20px 5px 5px 5px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
@@ -88,4 +89,9 @@
 }
 img {
   border-radius: 15px;
+}
+
+.dietsWrapper h2 {
+  background-color: var(--color-7);
+  border-radius: 10px;
 }

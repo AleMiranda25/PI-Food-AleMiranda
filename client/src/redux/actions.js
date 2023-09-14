@@ -1,14 +1,15 @@
 import axios from "axios";
-import { GET_RECIPE, GET_RECIPES } from "./actions-types";
-
+import { GET_RECIPE, GET_RECIPES, GET_DIETS } from "./actions-types";
+const URL_ALTER = `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`;
 // * PARA LAS RECETAS
 
 // OBTIENE TODAS LAS RECETAS
 
 const getRecipes = () => {
   return async function (dispatch) {
-    const apiData = await axios.get("/recipes");
-    const recipes = apiData.data?.results;
+    const apiData = await axios.get(`/recipes`);
+    const recipes = apiData.data;
+    console.log(recipes);
     dispatch({ type: GET_RECIPES, payload: recipes });
   };
 };
@@ -22,10 +23,12 @@ const getRecipe = (id) => {
 
 // * PARA LAS DIETAS
 
-const getDiets = (id) => {
+const getDiets = () => {
   return async function (dispatch) {
-    let recipe = await axios.get(`/diets`);
-    dispatch({ type: GET_DIETS, payload: recipe });
+    let response = await axios.get(`/diets`);
+    let diets = response.data;
+    console.log(diets);
+    dispatch({ type: GET_DIETS, payload: diets });
   };
 };
 

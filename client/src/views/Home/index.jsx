@@ -7,6 +7,7 @@ import { getDiets, getRecipes } from "../../redux/actions";
 import "./module.css";
 //Componentes
 import RecipeCardContainer from "../../components/RecipeCardContainer";
+import FilterItems from "../../components/FilterItems";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -18,8 +19,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="tituloHome"></div>
-
+      <FilterItems />
       <div className="recipeContainer">
         <RecipeCardContainer />
       </div>

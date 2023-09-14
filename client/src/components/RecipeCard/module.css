@@ -10,11 +10,12 @@
   --color-11: #ffffff;
   --color-10: #9e9e9e;
   --color-9: #ff5722;
-  --color-7: #2632387a;
+  --color-7: #63829257;
   --color-12: #263238;
 }
 
 .cardContainer {
+  color: white;
   width: 250px;
   height: 350px;
   display: flex;

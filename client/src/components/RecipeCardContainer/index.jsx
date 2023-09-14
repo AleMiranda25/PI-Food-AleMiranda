@@ -14,6 +14,7 @@ const RecipeCardContainer = () => {
         return (
           <RecipeCard
             key={rec.id}
+            id={rec.id}
             image={rec.image}
             name={rec.name}
             diets={rec.diets}

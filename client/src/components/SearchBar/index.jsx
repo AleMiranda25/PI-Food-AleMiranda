@@ -7,7 +7,7 @@ export default function SearchBar(props) {
   const { onSearch } = props;
   return (
     <div className="searchBar">
-      <button onClick={onSearch}> </button>
+      <button onClick={onSearch}>🔍︎</button>
       <input type="search" placeholder="  Search Name or ID" />
     </div>
   );

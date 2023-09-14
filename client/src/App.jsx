@@ -28,9 +28,9 @@ export default function App() {
             </div>
           }
         >
-          <Route exact path="/home" Component={Home} />
+          <Route path="/home" Component={Home} />
           <Route path="/about" Component={About} />
-          <Route path="/detail" Component={Detail} />
+          <Route path="/detail/:id" Component={Detail} />
           <Route path="/create" Component={Form} />
         </Route>
       </Routes>

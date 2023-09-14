@@ -4,33 +4,20 @@
 import "./module.css";
 // Componentes
 import SearchBar from "../SearchBar";
-import { Link, Route, Routes } from "react-router-dom";
-import NavItems from "../NavItems";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/create">Create</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li className="searchBar">
-          <SearchBar />
-        </li>
-        <Routes>
-          <Route exact path="/home" Component={NavItems} />
-        </Routes>
-
-        <li className="landingButton">
-          <Link to="/">Landing</Link>
-        </li>
-      </ul>
+    <div className="navbar">
+      <Link to="/home">Home</Link>
+      <Link to="/create">Create</Link>
+      <Link to="/about">About</Link>
+      <div className="searchBar">
+        <SearchBar />
+      </div>
+      <div className="landingButton">
+        <Link to="/"> ↩️ Landing</Link>
+      </div>
     </div>
   );
 };

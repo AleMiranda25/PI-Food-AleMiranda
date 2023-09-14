@@ -1,0 +1,27 @@
+.filters {
+  position: relative;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.66);
+  display: block;
+  flex-wrap: wrap;
+  z-index: 1;
+  font-size: large;
+  font-weight: bold;
+}
+
+.filters label,
+.filters select {
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.filters option {
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
